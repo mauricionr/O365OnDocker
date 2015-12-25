@@ -6,7 +6,7 @@ var credentials = {
     authority: "https://login.microsoftonline.com/common",
     client_id: "caaf4d2a-0300-4517-933e-9977e56765da",
     client_secret: "GxAKwNBQCs8JsSr4CwxYid0auwefTBLypHTx62LXojE=",
-    redirect_uri: "http://localhost:3000/login"
+    redirect_uri: "http://o365ondocker.cloudapp.net:80/login"
 };
 
 /**
