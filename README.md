@@ -8,7 +8,7 @@ Below sections would be covered in this sample
 2. Prerequisites
 3. Configure Docker
 4. Docker Components
-5. Docker Comments
+5. Docker Commands
 6. Build NodeJS Base Image
 7. Build Office 365 NodeJS Microservice
 8. Dockerize Office365 Microservice
