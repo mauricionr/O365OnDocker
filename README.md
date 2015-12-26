@@ -74,7 +74,7 @@ $ docker run -d -p 80:3000 o365addin-docker:0.1
 
 * Change the AppID and Redirection URL's in Azure and [authHelper.js](./authHelper.js)
 
-* Test the app in browser
+* Test the app in browser 
 
 ##Run Docker from Azure
 1) Create SSL certs using Open SSL
