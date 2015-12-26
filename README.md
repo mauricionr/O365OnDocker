@@ -1,11 +1,5 @@
 # Office 365 Addins on Docker
 
-#Why Docker?
-* Docker is an exciting new technology to build platform agnostic light weight apps/micro services/containers which can be provisioned, deployed, scaled faster than traditional VM's.
-* Building Cloud hosted/provider hosted SharePoint/Office365 addins requires additional infrastructure to the mix. 
-* Docker's X-Plat CLI tools to provide continous integration and delivery thus making DevOps relatively simpler.
-For more details read [docker docs](https://docs.docker.com/)
-
 This example shows how to run office 365 addins using Docker containers 
 
 Below sections would be covered in this sample
@@ -19,6 +13,12 @@ Below sections would be covered in this sample
 7. Build Office 365 NodeJS Microservice
 8. Dockerize Office365 Microservice
 9. Publish Microservice to Azure Docker Container
+
+#Why Docker?
+* Docker is an exciting new technology to build platform agnostic light weight apps/micro services/containers which can be provisioned, deployed, scaled faster than traditional VM's.
+* Building Cloud hosted/provider hosted SharePoint/Office365 addins requires additional infrastructure to the mix. 
+* Docker's X-Plat CLI tools to provide continous integration and delivery thus making DevOps relatively simpler.
+For more details read [docker docs](https://docs.docker.com/)
 
 ![Micro services Architecture](https://github.com/spbreed/O365OnDocker/blob/master/readme-imgs/DockerArch.png)
 
@@ -52,6 +52,7 @@ Below sections would be covered in this sample
 8. $docker push
 9. $docker-machine env
 10. $docker-machine create
+11. $docker attach
 
 ##Build NodeJS Base Image
 ```
