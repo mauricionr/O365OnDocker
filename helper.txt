@@ -1,0 +1,20 @@
+Client: caaf4d2a-0300-4517-933e-9977e56765da
+Secret: GxAKwNBQCs8JsSr4CwxYid0auwefTBLypHTx62LXojE=
+
+$ docker build -t o365addin-docker:0.1 .
+
+$ docker run -d -p 80:3000 o365addin-docker:0.1
+
+certs:
+$ openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout o365-docker.pem -out o365-docker.pem
+$ openssl x509 -inform pem -in o365-docker.pem -outform der -out o365-docker.cer
+$ openssl pkcs12 -export -out o365-docker.pfx -in o365-docker.pem -name "o365-docker Certificate"
+
+
+$ eval "$(C:/Program\ Files/Docker\ Toolbox/docker-machine.exe env default)"
+
+
+$ docker-machine create -d azure --azure-subscription-id="d48ccdca-d4ab-4579-89fa-ed113033bf74" --azure-subscription-ce
+rt="o365-docker.pem" --azure-location="East US" o365ondocker
+
+
