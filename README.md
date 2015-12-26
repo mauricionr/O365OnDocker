@@ -1,6 +1,6 @@
 # Office 365 Addins on Docker
 
-This example shows how to run office 365 addins using Docker containers 
+This example shows how to run office 365 addins as microservices on Docker containers 
 
 Below sections would be covered in this sample
 
