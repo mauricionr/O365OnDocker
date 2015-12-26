@@ -20,7 +20,7 @@ Below sections would be covered in this sample
 8. Dockerize Office365 Microservice
 9. Publish Microservice to Azure Docker Container
 
-!(Micro services Architecture)[https://github.com/spbreed/O365OnDocker/blob/master/readme-imgs/DockerArch.png]
+![Micro services Architecture](https://github.com/spbreed/O365OnDocker/blob/master/readme-imgs/DockerArch.png)
 
 ##Prerequisites
 1. Windows 7 or Above
