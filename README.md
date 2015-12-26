@@ -14,13 +14,14 @@ Below sections would be covered in this sample
 8. Dockerize Office365 Microservice
 9. Publish Microservice to Azure Docker Container
 
+![Micro services Architecture](https://github.com/spbreed/O365OnDocker/blob/master/readme-imgs/DockerArch.png)
+
 #Why Docker?
 * Docker is an exciting new technology to build platform agnostic light weight apps/micro services/containers which can be provisioned, deployed, scaled faster than traditional VM's.
 * Building Cloud hosted/provider hosted SharePoint/Office365 addins requires additional infrastructure to the mix. 
 * Docker's X-Plat CLI tools to provide continous integration and delivery thus making DevOps relatively simpler.
 For more details read [docker docs](https://docs.docker.com/)
 
-![Micro services Architecture](https://github.com/spbreed/O365OnDocker/blob/master/readme-imgs/DockerArch.png)
 
 ##Prerequisites
 1. Windows 7 or Above
