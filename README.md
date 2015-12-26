@@ -5,13 +5,13 @@ This example shows how to run office 365 addins using Docker containers
 
 Below sections would be covered in this sample
 
-[Prerequisites](#Prerequisites)
-[Why Docker?](#Why Docker?)
-[Configure Docker](#Configure Docker)
-[Build NodeJS Base Image](#Build NodeJS Base Image)
-[Configure Office 365 NodeJS addin](#Configure Office 365 NodeJS addin)
-[Dockerize Office365 addin](#Dockerize Office365 addin)
-[Run Docker from Azure](#Run Docker from Azure)
+1. [Prerequisites](#Prerequisites)
+2. [Why Docker?](#Why Docker?)
+3. [Configure Docker](#Configure Docker)
+4. [Build NodeJS Base Image](#Build NodeJS Base Image)
+5. [Configure Office 365 NodeJS addin](#Configure Office 365 NodeJS addin)
+6. [Dockerize Office365 addin](#Dockerize Office365 addin)
+7. [Run Docker from Azure](#Run Docker from Azure)
 
 ##Prerequisites
 1. Windows 7 or Above
