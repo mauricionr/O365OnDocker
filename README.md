@@ -17,10 +17,12 @@ Below sections would be covered in this sample
 1. Windows 7 or Above
 2. Office 365 subscription
 3. Azure subscription
+4. Visual Studio Code
 
 #Why Docker?
-Docker provides tools and technology to build platform agnostic apps/micro services/containers which can be provisioned, deployed, scaled faster than traditional VM's.
-Building Cloud hosted/provider hosted SharePoint/Office365 addins requires additional infrastructure to the mix. Docker makes it easy to deploy and maintain through X platform cli interface.
+* Docker provides tools and technology to build platform agnostic apps/micro services/containers which can be provisioned, deployed, scaled faster than traditional VM's.
+* Building Cloud hosted/provider hosted SharePoint/Office365 addins requires additional infrastructure to the mix. 
+* Docker provides simplistic X-Plat Cli tools to provide continous integration and delivery.
 For more details read [docker docs](https://docs.docker.com/)
 
 
@@ -33,8 +35,7 @@ Run the sample Office 365 Add in from your local machine following [this article
 
 ##Build NodeJS Base Image
 
-* Prepare Docker file
-Refer [Docker file](./DockerFile) 
+* [Docker file](./DockerFile) 
 
 ```
 FROM ubuntu:latest
