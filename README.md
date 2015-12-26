@@ -5,7 +5,7 @@ This example shows how to run office 365 addins using Docker containers
 
 Below sections would be covered in this sample
 
-> [Prerequisites](#Prerequisites)
+1. [Prerequisites](#Prerequisites)
 2. [Why Docker?](#Why Docker?)
 3. [Configure Docker](#Configure Docker)
 4. [Build NodeJS Base Image](#Build NodeJS Base Image)

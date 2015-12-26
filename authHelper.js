@@ -1,4 +1,4 @@
-// Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See full license at the bottom of this file.
+// Copyright(c) Microsoft. All rights reserved. Licensed under the MIT license. See full license at the bottom of this file.
 var AuthenticationContext = require("adal-node").AuthenticationContext;
 
 // The application registration (must match Azure AD config)
