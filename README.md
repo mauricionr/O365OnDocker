@@ -3,7 +3,7 @@
 #Why Docker?
 * Docker provides tools and technology to build platform agnostic light weight apps/micro services/containers which can be provisioned, deployed, scaled faster than traditional VM's.
 * Building Cloud hosted/provider hosted SharePoint/Office365 addins requires additional infrastructure to the mix. 
-* Docker provides simplistic X-Plat Cli tools to provide continous integration and delivery.
+* Docker's X-Plat CLI tools to provide continous integration and delivery thus making DevOps relatively simpler.
 For more details read [docker docs](https://docs.docker.com/)
 
 This example shows how to run office 365 addins using Docker containers 
