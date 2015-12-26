@@ -1,6 +1,11 @@
 # Office 365 Addins on Docker
 
-Docker is an exciting new technology to build cloud agnostic apps which runs in any platform.  
+#Why Docker?
+* Docker provides tools and technology to build platform agnostic light weight apps/micro services/containers which can be provisioned, deployed, scaled faster than traditional VM's.
+* Building Cloud hosted/provider hosted SharePoint/Office365 addins requires additional infrastructure to the mix. 
+* Docker provides simplistic X-Plat Cli tools to provide continous integration and delivery.
+For more details read [docker docs](https://docs.docker.com/)
+
 This example shows how to run office 365 addins using Docker containers 
 
 Below sections would be covered in this sample
@@ -18,12 +23,6 @@ Below sections would be covered in this sample
 2. Office 365 subscription
 3. Azure subscription
 4. Visual Studio Code
-
-#Why Docker?
-* Docker provides tools and technology to build platform agnostic apps/micro services/containers which can be provisioned, deployed, scaled faster than traditional VM's.
-* Building Cloud hosted/provider hosted SharePoint/Office365 addins requires additional infrastructure to the mix. 
-* Docker provides simplistic X-Plat Cli tools to provide continous integration and delivery.
-For more details read [docker docs](https://docs.docker.com/)
 
 
 ##Configure Docker
