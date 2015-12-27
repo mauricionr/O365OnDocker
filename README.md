@@ -34,7 +34,7 @@ For more details read [docker docs](https://docs.docker.com/)
 ##Configure Docker
 1. Install docker tool kit from [docker docs](https://docs.docker.com/engine/installation/windows/)
 2. Run docker quick start terminal
-(To run this sample straightaway skip to "How to run this sample" section)
+3. To run this sample straightaway skip to "How to run this sample" section
 
 
 ##Docker Components
