@@ -94,8 +94,8 @@ CMD ["npm","start"]
 * Now build the Docker Image and Run it
 
 ```
-$ docker build -t o365addin-docker:0.1 .
-$ docker run -d -p 80:3000 o365addin-docker:0.1
+docker build -t o365addin-docker:0.1 .
+docker run -d -p 80:3000 o365addin-docker:0.1
 ```
 
 * Change the AppID and Redirection URL's in Azure and [authHelper.js](./authHelper.js)
@@ -113,21 +113,21 @@ $ openssl pkcs12 -export -out o365-docker.pfx -in o365-docker.pem -name "o365-do
 
 3) Now Create a docker Microservice in Azure
 ```
-$ docker-machine create -d azure --azure-subscription-id="d48ccdca-d4ab-4579-89fa-ed113033bf74" --azure-subscription-ce
+docker-machine create -d azure --azure-subscription-id="d48ccdca-d4ab-4579-89fa-ed113033bf74" --azure-subscription-ce
 rt="o365-docker.pem" --azure-location="East US" o365ondocker
 ```
 4) Connect to Azure Docker machine
 
 ```
-$ eval "$(C:/Program\ Files/Docker\ Toolbox/docker-machine.exe env o365ondocker)"
+eval "$(C:/Program\ Files/Docker\ Toolbox/docker-machine.exe env o365ondocker)"
 ```
 
 5) Change the AppID and Redirection URL's in Azure and [authHelper.js](./authHelper.js)
 
 6) Build and Run the app
 ```
-$ docker build -t o365addin-docker:0.1 .
-$ docker run -d -p 80:3000 o365addin-docker:0.1
+docker build -t o365addin-docker:0.1 .
+docker run -d -p 80:3000 o365addin-docker:0.1
 ```
 7) Test the app in browser
 
@@ -144,11 +144,11 @@ docker-machine ip default
 ```
 4) Build the docker image
 ```
-$ docker build -t o365addin-docker:0.1 .
+docker build -t o365addin-docker:0.1 .
 
 ```
 5) Run the docker container
 ```
-$ docker run -d -p 80:3000 o365addin-docker:0.1
+docker run -d -p 80:3000 o365addin-docker:0.1
 ```
 
