@@ -2,7 +2,7 @@
 
 This example shows how to run office 365 addins as microservices on Docker containers 
 
-##watch this video to see this in action
+###watch this video to see this in action
 
 [![Office365 Addin on Docker](https://github.com/spbreed/O365OnDocker/blob/master/readme-imgs/docker.png)](https://www.youtube.com/watch?v=PFVivUpMyLk)
 
