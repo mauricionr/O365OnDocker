@@ -26,13 +26,9 @@ $ openssl x509 -inform pem -in o365-docker.pem -outform der -out o365-docker.cer
 $ openssl pkcs12 -export -out o365-docker.pfx -in o365-docker.pem -name "o365-docker Certificate"
 
 
-<<<<<<< HEAD
+
 #docker azure
-$ docker-machine create -d azure --azure-subscription-id="xxxxx" --azure-subscription-ce
-=======
-$ docker-machine create -d azure --azure-subscription-id="xxxxxx" --azure-subscription-ce
->>>>>>> 94ae11d4e7532db729583f1d762c61ea7b0bed63
-rt="o365-docker.pem" --azure-location="East US" o365ondocker
+$ docker-machine create -d azure --azure-subscription-id="xxxxx" --azure-subscription-cert="o365-docker.pem" --azure-location="East US" o365ondocker
 
 $ eval "$(C:/Program\ Files/Docker\ Toolbox/docker-machine.exe env default)"
 

@@ -4,8 +4,6 @@ This example shows how to run office 365 addins as microservices on Docker conta
 
 [![Office365 Addin on Docker](https://github.com/spbreed/O365OnDocker/blob/master/readme-imgs/docker.png)](https://www.youtube.com/watch?v=PFVivUpMyLk)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/PFVivUpMyLk" frameborder="0" allowfullscreen></iframe>
-
 Below sections would be covered in this sample
 
 1. Why Docker?
@@ -38,11 +36,7 @@ For more details read [docker docs](https://docs.docker.com/)
 ## 3. Configure Docker
 1. Install docker tool kit from [docker docs](https://docs.docker.com/engine/installation/windows/)
 2. Run docker quick start terminal
-<<<<<<< HEAD
-(To run this sample straightaway skip to "How to run this sample" section)
-=======
 3. To run this sample straightaway skip to "[10. How to run this sample](https://github.com/spbreed/O365OnDocker/blob/master/README.md#10-how-to-run-this-sample)" section
->>>>>>> 94ae11d4e7532db729583f1d762c61ea7b0bed63
 
 
 ## 4. Docker Components
@@ -113,16 +107,15 @@ docker run -d -p 80:3000 o365addin-docker:0.1
 ## 9. Publish Microservice to Azure
 1) Create SSL certs using Open SSL
 ```
-$ openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout o365-docker.pem -out o365-docker.pem
-$ openssl x509 -inform pem -in o365-docker.pem -outform der -out o365-docker.cer
-$ openssl pkcs12 -export -out o365-docker.pfx -in o365-docker.pem -name "o365-docker Certificate"
+openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout o365-docker.pem -out o365-docker.pem
+openssl x509 -inform pem -in o365-docker.pem -outform der -out o365-docker.cer
+openssl pkcs12 -export -out o365-docker.pfx -in o365-docker.pem -name "o365-docker Certificate"
 ```
 2) Upload o365-docker.pem to Azure -> Settings -> Management Certificates -> Upload
 
 3) Now Create a docker Microservice in Azure
 ```
-docker-machine create -d azure --azure-subscription-id="d48ccdca-d4ab-4579-89fa-ed113033bf74" --azure-subscription-ce
-rt="o365-docker.pem" --azure-location="East US" o365ondocker
+docker-machine create -d azure --azure-subscription-id="d48ccdca-d4ab-4579-89fa-ed113033bf74" --azure-subscription-cert="o365-docker.pem" --azure-location="East US" o365ondocker
 ```
 4) Connect to Azure Docker machine
 
@@ -139,11 +132,7 @@ docker run -d -p 80:3000 o365addin-docker:0.1
 ```
 7) Test the app in browser
 
-<<<<<<< HEAD
-##How to run this sample
-=======
 ## 10. How to run this sample
->>>>>>> 94ae11d4e7532db729583f1d762c61ea7b0bed63
 
 1) Open Docker quick start terminal
 2) Clone this repo
@@ -156,19 +145,11 @@ docker-machine ip default
 ```
 4) Build the docker image
 ```
-<<<<<<< HEAD
-$ docker build -t o365addin-docker:0.1 .
-=======
 docker build -t o365addin-docker:0.1 .
->>>>>>> 94ae11d4e7532db729583f1d762c61ea7b0bed63
 
 ```
 5) Run the docker container
 ```
-<<<<<<< HEAD
-$ docker run -d -p 80:3000 o365addin-docker:0.1
-=======
 docker run -d -p 80:3000 o365addin-docker:0.1
->>>>>>> 94ae11d4e7532db729583f1d762c61ea7b0bed63
 ```
 
