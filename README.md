@@ -17,34 +17,34 @@ Below sections would be covered in this sample
 
 ![Micro services Architecture](https://github.com/spbreed/O365OnDocker/blob/master/readme-imgs/DockerArch.png)
 
-#Why Docker?
+## 1. Why Docker?
 * Docker is an exciting new technology to build platform agnostic light weight apps/micro services/containers which can be provisioned, deployed, scaled faster than traditional VM's.
 * Building Cloud hosted/provider hosted SharePoint/Office365 addins requires additional infrastructure to the mix. 
 * Docker's X-Plat CLI tools to provide continous integration and delivery thus making DevOps relatively simpler.
 For more details read [docker docs](https://docs.docker.com/)
 
 
-##Prerequisites
+## 2. Prerequisites
 1. Windows 7 or Above
 2. Office 365 subscription
 3. Azure subscription
 4. Visual Studio Code
 
 
-##Configure Docker
+## 3. Configure Docker
 1. Install docker tool kit from [docker docs](https://docs.docker.com/engine/installation/windows/)
 2. Run docker quick start terminal
 3. To run this sample straightaway skip to "How to run this sample" section
 
 
-##Docker Components
+## 4. Docker Components
 1. Docker Images > Blueprints of our application
 2. Docker Container > Created from docker images and are real instances of our application
 3. Docker Daemon > Building, running and distributing Docker containers
 4. Docker Client > Run on our local machine and connect to the daemon
 5. Docker Hub > A registry of docker images
 
-##Docker Commands
+## 5. Docker Commands
 1. $docker build
 2. $docker run
 3. $docker search
@@ -57,7 +57,7 @@ For more details read [docker docs](https://docs.docker.com/)
 10. $docker-machine create
 11. $docker attach
 
-##Build NodeJS Base Image
+## 6. Build NodeJS Base Image
 ```
 FROM ubuntu:latest
 RUN apt-get update
@@ -65,11 +65,11 @@ RUN apt-get install -y nodejs nodejs-legacy npm
 RUN apt-get clean
 ```
 
-##Build Office 365 NodeJS Microservice
+## 7. Build Office 365 NodeJS Microservice
 Run the sample Office 365 Add in from your local machine following [this article](https://github.com/OfficeDev/O365-Nodejs-Microsoft-Graph-Connect#configure-and-run-the-app)
 
 
-##Dockerize Office365 addin
+## 8. Dockerize Office365 addin
 
 * First install the required packages from package.json
 ```
@@ -102,7 +102,7 @@ docker run -d -p 80:3000 o365addin-docker:0.1
 
 * Test the app in browser 
 
-##Publish Microservice to Azure
+## 9. Publish Microservice to Azure
 1) Create SSL certs using Open SSL
 ```
 $ openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout o365-docker.pem -out o365-docker.pem
@@ -131,7 +131,7 @@ docker run -d -p 80:3000 o365addin-docker:0.1
 ```
 7) Test the app in browser
 
-##How to run this sample
+## 10. How to run this sample
 
 1) Open Docker quick start terminal
 2) Clone this repo
