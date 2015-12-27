@@ -22,4 +22,5 @@ WORKDIR src/
 #Set default comment on start
 CMD ["npm","start"]
 
+
 #docker run -d -p 80:3000 o365addin-docker:0.1

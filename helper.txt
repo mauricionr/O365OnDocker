@@ -1,19 +1,40 @@
+#URLS
+http://localhost:3000/login
+http://192.168.99.100:80/login
+http://o365ondocker.cloudapp.net:80/login
+
+#Office 365
 Client: caaf4d2a-0300-4517-933e-9977e56765da
 Secret: GxAKwNBQCs8JsSr4CwxYid0auwefTBLypHTx62LXojE=
 
-$ docker build -t o365addin-docker:0.1 .
+#remove containers
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
 
+#remove docker image
+$docker rmi 123
+
+#docker search
+$docker search ubuntu
+
+$ docker build -t o365addin-docker:0.1 .
 $ docker run -d -p 80:3000 o365addin-docker:0.1
 
-certs:
+#generate certs:
 $ openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout o365-docker.pem -out o365-docker.pem
 $ openssl x509 -inform pem -in o365-docker.pem -outform der -out o365-docker.cer
 $ openssl pkcs12 -export -out o365-docker.pfx -in o365-docker.pem -name "o365-docker Certificate"
 
 
-$ docker-machine create -d azure --azure-subscription-id="d48ccdca-d4ab-4579-89fa-ed113033bf74" --azure-subscription-ce
+#docker azure
+$ docker-machine create -d azure --azure-subscription-id="xxxxx" --azure-subscription-ce
 rt="o365-docker.pem" --azure-location="East US" o365ondocker
 
 $ eval "$(C:/Program\ Files/Docker\ Toolbox/docker-machine.exe env default)"
+
+
+
+
+
 
 

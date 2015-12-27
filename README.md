@@ -13,6 +13,7 @@ Below sections would be covered in this sample
 7. Build Office 365 NodeJS Microservice
 8. Dockerize Office365 Microservice
 9. Publish Microservice to Azure Docker Container
+10. How to run this sample
 
 ![Micro services Architecture](https://github.com/spbreed/O365OnDocker/blob/master/readme-imgs/DockerArch.png)
 
@@ -33,6 +34,7 @@ For more details read [docker docs](https://docs.docker.com/)
 ##Configure Docker
 1. Install docker tool kit from [docker docs](https://docs.docker.com/engine/installation/windows/)
 2. Run docker quick start terminal
+(To run this sample straightaway skip to "How to run this sample" section)
 
 
 ##Docker Components
@@ -128,3 +130,25 @@ $ docker build -t o365addin-docker:0.1 .
 $ docker run -d -p 80:3000 o365addin-docker:0.1
 ```
 7) Test the app in browser
+
+##How to run this sample
+
+1) Open Docker quick start terminal
+2) Clone this repo
+```
+git clone https://github.com/spbreed/O365OnDocker.git
+```
+3) Update Office 365 App permissions and authhelper.js with Docker IP
+```
+docker-machine ip default
+```
+4) Build the docker image
+```
+$ docker build -t o365addin-docker:0.1 .
+
+```
+5) Run the docker container
+```
+$ docker run -d -p 80:3000 o365addin-docker:0.1
+```
+
