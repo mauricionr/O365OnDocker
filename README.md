@@ -111,7 +111,7 @@ $ openssl pkcs12 -export -out o365-docker.pfx -in o365-docker.pem -name "o365-do
 
 3) Now Create a docker Microservice in Azure
 ```
-$ docker-machine create -d azure --azure-subscription-id="d48ccdca-d4ab-4579-89fa-ed113033bf74" --azure-subscription-ce
+$ docker-machine create -d azure --azure-subscription-id="xxxx-xxxx-xxx-xxxx-xxxx" --azure-subscription-ce
 rt="o365-docker.pem" --azure-location="East US" o365ondocker
 ```
 4) Connect to Azure Docker machine
